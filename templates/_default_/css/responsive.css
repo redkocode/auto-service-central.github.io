@@ -1,0 +1,1226 @@
+.show-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        width: 100%;
+        padding: 0 5px;
+        min-width: 310px;
+    }
+    .onlyDesktop {
+        display: none;
+    }
+    .mobile {
+        display: inline-block;
+    }
+    .show-mobile{
+        display: block;
+    }
+    /*Сюда я предварительно дописываю элементы которые делают ширину больше чем 320px.
+    В дальнейшем ,если нужно, вырезаю их из этого списка и пишу ниже с остальными стилями*/
+    .minwidth,
+    .productMainInfo .infoSide,
+    .productMainInfo .pictureSide,
+    .freeCheck .desc,
+    .listCharItems .easyshop_item_thumb,
+    .contactsHome .headContacts,
+    .contactsHome .mapBlock,
+    .homeTop .leftSide,
+    .homeTop .rightSide,
+    .weBuy .list,
+    .boughtCars .galleryBoughtCars,
+    .boughtCars .galleryBoughtCars .galleryItem,
+    .buyToday .formWrap,
+    .buyToday .formSide,
+    .partnershipVariants .wrapper > .title,
+    .partnershipVariants .variant .pointsCard,
+    .experts .sliderSide,
+    .experts .formSide,
+    .partnershipVariants .leftSide, .partnershipVariants .rightSide ,
+    .partnershipVariants .leftSide, .partnershipVariants .leftSide,
+    .experts .expertForm,
+    .headBoughtCars .title,
+    .buyToday .carSide,
+    .headContacts .contactInfo,
+    .headContacts .contactTitle {
+        width: 100%;
+        float: none;
+        padding: 0;
+        min-width: 100%;
+        margin: 0;
+    }
+    .buyToday .formWrap .button input {
+        padding: 17px 45px;
+    }
+    .listCharItems .easyshop_item_thumb img{
+        width: 100%;
+    }
+    .listCharItems .easyshop_item_thumb:nth-child(3n - 1) {
+        margin: 0;
+    }
+    .topmenu .menu,
+    .homeTop .leftSide .text{
+        font-size: 14px;
+    }
+
+    .schedule h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+
+    .image img
+    {
+        width: 100%;
+        display: none;
+    }
+    .contactsHome {
+        height: auto;
+        margin: 0;
+        background-size: cover;
+        padding-bottom: 20px;
+    }
+    .experts .owl-nav {
+        display: none;
+    }
+    header .contactSide .callback {
+        display: none;
+    }
+
+    header {
+        padding-top: 33px;
+        height: auto;
+    }
+    header .contactSide .number {
+        font-size: 16px;
+        padding: 0;
+        padding-top: 50px;
+        margin-right: 10px;
+        
+    }
+    header .contactSide {
+        position: absolute;
+        padding: 0;
+        top: 10px;
+        left: calc(50% - 95px);
+        text-align: left;
+        width: 200px;
+    }
+    header .logo  {
+        padding: 0;
+        position: absolute;
+        left: calc(50% - 85px);
+        top: 0;
+    }
+
+    .social {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Если нужно выравнивание по вертикали */
+        text-align: center;
+    }
+
+    header .contactSide {
+        margin-top: 110px;
+    }
+
+
+
+    .fRight {
+            float: none;
+            margin: 0 auto; /* Центрирует, если width фиксированный */
+        }
+
+
+    .addr {
+        padding-top: 100px;
+        color: #EBEBEB;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Если нужно выравнивание по вертикали */
+        text-align: center;
+        margin-right: 25px;
+    }
+
+
+    header .logo img {
+        width: 170px;
+    }
+    #burger {
+        margin-top: 35px;
+    }
+    .topScreen {
+        position: unset;
+        left: unset;
+        top: unset;
+        height: auto;
+        text-align: center;
+    }
+    .homeTop {
+        padding-top:140px;
+        min-height: 540px;
+
+    }
+    .homeTop .leftSide .title h1 {
+        font-size: 18px;
+    }
+    .homeTop .leftSide .title {
+        padding: 0 0 120px 0;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .homeTop .leftSide .infoWrap {
+        position: absolute;
+        top: 315px;
+        width: 300px;
+        left: calc(50% - 150px);
+    }
+    .rightSide .timerWindow {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        border: none;
+        position: unset;
+    }
+    .rightSide .timerWindow .nameWindow {
+        padding: 0 0 20px 0;
+    }
+    .homeTop .leftSide .buttonArea {
+        padding: 0;
+        background: none;
+    }
+    .homeTop .leftSide .buttonArea .button a ,
+    .goldButton a {
+        padding: 10px 30px;
+    }
+    .rightSide .cars {
+        left: -40px;
+        bottom: 0;
+        right: unset;
+        position: absolute;
+    }
+    .rightSide .cars img {
+        width: 100%;
+        max-width: 450px;
+    }
+    .topmenu .menu {
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 75px;
+        color: #282828;
+        text-align: center;
+    }
+    .topmenu ul li {
+        color: #282828;
+        float: none;
+         padding: 0;
+        border-bottom: none;
+        margin: 20px 0;
+    }
+    .topmenu ul li.selected, .topmenu ul li:hover, .footerMenu ul li.selected, .footerMenu ul li:hover {
+        border:none;
+    }
+    .economyBlock {
+        position: relative;
+        margin-bottom: 45px;
+    }
+    .economyBlock .headBlock .title {
+        font-size: 22px;
+        padding: 20px 10px 10px;
+        text-transform: uppercase;
+    }
+    .economyBlock .headBlock .text {
+        font-size: 14px;
+        padding: 0 10px 0;
+    }
+    .economyBlock .advantages {
+        width: 310px;
+        float: none;
+        padding: 0 10px 0 10px;;
+        position: absolute;
+        top: 220px;
+    }
+    .economyBlock .advantages .advantage {
+        margin-bottom: 20px;
+    }
+    .economyBlock .advantages .advantage:nth-child(n+4){
+        display: none;
+    }
+    .economyBlock .calcWrap {
+        margin-top: 315px;
+        width: 100%;
+        float: none;
+        border: 5px solid #f0f3f7;
+        padding: 20px 10px;
+    }
+    .economyBlock .calculator .calcWrap .calcHead {
+        padding: 0;
+    }
+    .economyBlock .calculator .calcWrap .calcHead  .bigText {
+        font-size: 20px;
+        padding-left: 45px;
+        width: 275px;
+    }
+    .economyBlock .calculator .calcWrap .calcHead  .smallText {
+        font-size: 14px;
+        font-weight: 500;
+        color: #cfa55b;
+        padding: 10px 0;
+    }
+    .economyBlock .calculator .calcWrap .calcFields .field input[type='text'] {
+        height: 40px;
+        padding-top: 0;
+    }
+    .economyBlock .headBlock {
+        width: 300px;
+    }
+    .economyBlock .calculator .calcWrap .calcFields .field {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .economyBlock .calculator .calcWrap .calcFields .field select {
+        margin-top: 0;
+    }
+    .economyBlock .calculator .calcWrap .calcCheckbox .checkbox {
+        text-align: center;
+        width: 50%;
+        margin: 0 0 35px 0;
+    }
+    .economyBlock .calculator .calcWrap .calcCheckbox .checkbox label {
+        display: inline-block;
+        margin-top: 10px;
+        width: 100%;
+        padding: 0;
+    }
+    .calcWrap .bottomBlock .contact input {
+        height: 40px;
+        padding-top: 0;
+    }
+    .calcWrap .bottomBlock .button input {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .bottomBlock .button {
+        float: none;
+        text-align: left;
+    }
+    .calcWrap .bottomBlock {
+        width: 280px;
+        margin: 0 auto;
+    }
+    .weBuy {
+        padding-bottom: 145px;
+        overflow: hidden;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .weBuy .title {
+        font-size: 20px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    .weBuy .list ul li {
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .weBuy .cars {
+        right: -65px;
+        top: unset;
+        bottom: 0;
+    }
+    .weBuy .cars .image img {
+        width: 350px;
+        display: inline-block;
+    }
+    .wrapper.mobile .goldButton {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .flip-clock-wrapper{
+        width: 90%;
+    }
+
+    .flip-clock-wrapper ul{
+        line-height: 60px;
+        font-size: 40px;
+        width: 40px;
+        height: 70px;
+    }
+    .flip-clock-wrapper ul li a div div.inn{
+        font-size: 50px;
+        line-height: 1.4;
+    }
+    .flip-clock-divider{
+        height: 90px;
+    }
+
+    .flip-clock-divider .flip-clock-label{
+        top: 4.8em;
+    }
+
+    .timerWindow .timer{
+        width: 260px;
+        margin : 0 auto;
+    }
+    .flip-clock-divider.minutes .flip-clock-label {
+        right: -74px;
+    }
+    .flip-clock-divider.seconds .flip-clock-label {
+        right: -77px;
+    }
+    .headBoughtCars .title {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+    .headBoughtCars  .button.goldButton{
+        display: none;
+    }
+
+    .boughtCars .galleryBoughtCars .galleryItem{
+        margin-right: 0;
+        height: 320px;
+        margin-bottom: 20px;
+    }
+    .boughtCars .galleryBoughtCars .galleryItem .picture{
+        text-align: center;
+    }
+    .boughtCars .galleryBoughtCars .galleryItem .info{
+        display: none;
+    }
+
+    .easyshop_item_thumb .mobile-info .fLeft{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 900;
+        width: 50%;
+        height: 46px;
+        overflow: hidden;
+        padding-top: 5px;
+    }
+    .easyshop_item_thumb .mobile-info .fRight{
+        width: 50%;
+        color: #cfa55b;
+        font-size: 20px;
+        font-weight: 900;
+        text-align: right;
+        padding-right: 5px;
+        line-height: 1.0;
+    }
+    .easyshop_item_thumb .mobile-info .fRight span{
+        font-size: 14px;
+        font-weight: 300;
+
+    }
+    .boughtCars{
+        padding-bottom: 25px;
+    }
+
+
+    .carSide{
+        margin-left: 30px;
+    }
+
+
+
+    .carSide .title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 800;
+        color: #fff;
+        padding-bottom: 5px;
+
+    }
+
+    .buyToday .formWrap{
+        padding: 20px 10px;
+    }
+
+    .buyToday .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start; /* Выравнивание по левому краю */
+        text-align: left; /* Выравнивание текста по левому краю */
+    }
+
+    .pointInfo .pnt span::after{
+        display: none;
+    }
+    .pointInfo2 .textPoint{
+        float: none;
+    }
+
+
+    .carSide .telegram{
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .buyToday{
+        background: url(../images/---.png) 50% 100% no-repeat #101319;
+        padding-bottom: 10px;
+    }
+
+    .events {
+        padding-bottom: 10px;
+    }
+
+    .events .title {
+        font-size: 16px;
+        margin-bottom: 25px;
+        padding-top: 15px;
+    }
+
+    .events ul li {
+        width: 100%;
+        float: none;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
+    .events ul li:before{
+        content: '';
+        position: absolute;
+        height: 9px;
+        width: 9px;
+        margin-left: -44px;
+        margin-top: 5px;
+        border: 8px solid #cfa55b;
+        box-shadow: 0 0 20px #cfa55b;
+    }
+    .partnershipVariants .wrapper > .title {
+        font-size: 18px;
+        padding: 25px 0;
+    }
+    .partnershipVariants .variant .pointsCard .number {
+        font-size: 40px;
+        top: -35px;
+        left: 6px;
+    }
+    .partnershipVariants .variant .leftSide{
+        padding: 0;
+    }
+
+    .partnershipVariants .variant .pointsCard{
+        padding: 10px;
+    }
+    .partnershipVariants .variant .pointsCard .title{
+        padding-left: 22px;
+    }
+    .partnershipVariants .variant .pointsCard .title::before {
+        left: 5px;
+        top: 5px;
+    }
+    .partnershipVariants .variant .pointsCard .desc {
+        margin-bottom: 20px;
+    }
+    .partnershipVariants .variant .pointsCard ul li {
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding-left: 35px;
+        height: auto;
+        background-position: 0 5px !important;
+    }
+    .partnershipVariants .variant1 .details, .partnershipVariants .variant3 .details {
+        padding-right: 0;
+        padding-top: 50px;
+    }
+    .partnershipVariants .variant .details ul li {
+        font-size: 14px;
+        margin-bottom: 15px;
+        padding-left: 35px;
+        line-height: 120%;
+    }
+    .partnershipVariants .variant1 .details .button a {
+        padding: 10px 25px;
+        margin-left: 0;
+    }
+    .variant.variant1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .variant.variant2{
+        display: flex;
+        flex-direction: column-reverse;
+        background: url(../images/keys.png) 50% 100% no-repeat;
+        padding-bottom: 180px;
+    }
+
+    .variant.variant2 .leftSide .details{
+        padding: 20px 0;
+    }
+    .partnershipVariants .variant .pointsCard .button{
+        text-align: center;
+    }
+
+    .variant.variant3{
+        background: url(../images/masters_mobile.png) 50% 100% no-repeat;
+        padding-bottom: 230px;
+    }
+
+    .formSide .formText {
+        padding: 65px 10px 30px 10px;
+    }
+    .experts .formSide{
+        background-position: 50% 0;
+    }
+
+    .imageExpert img{
+        width: 100%;
+    }
+    .experts {
+        padding-top: 10px;
+    }
+    .sliderExperts .textExpert {
+        padding-left: 10px;
+        padding-top: 40px;
+    }
+    .sliderExperts .nameExpert{
+        bottom: 110px;
+    }
+    .experts .expertForm{
+        padding: 10px;
+    }
+    .headContacts .contactTitle{
+        font-size: 22px;
+        padding: 20px 0 10px;
+    }
+    .headContacts .contactInfo .freeTaxi {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .contactInfo .pointInfo .textPoint{
+        float: none;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .contactInfo .pnt {
+        width: 50px;
+    }
+    .headContacts .contactInfo .pointInfo{
+        padding-top: 15px;
+    }
+    .contactsHome .mapBlock {
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        box-shadow: none;
+    }
+    .contactsHome .mapBlock .map, .contactsHome .mapBlock .mapInfo{
+        width: 100%;
+    }
+    .contactsHome .mapInfo{
+        padding: 20px 10px;
+    }
+    .contactsHome .mapInfo .callbackButton{
+        text-align: center;
+    }
+    .mapInfo .title{
+        margin-bottom: 30px;
+    }
+    .contactsHome .mapBlock .map{
+        height: 310px;
+    }
+    footer .logo,
+    footer .footerMenu{
+        display: none;
+    }
+    footer .powered{
+        text-align: center;
+        float: none;
+    }
+
+    .popup_callback, .popup_question, .popup_checklist, .popup_form_info, .popup_login, .popup_registration, .popup_sendproduct {
+        width: 100%;
+        height: 550px;
+        left: 0;
+    }
+
+    .popup_callback .form_contacts .form_container, .popup_question .form_contacts .form_container{
+        width: 98%;
+        padding: 0 15px;
+        margin: 0 1%;
+    }
+    #popup input[type=submit] {
+        width: 280px;
+    }
+
+
+    /*  автоподбор */
+    .autoPickTopBlock .containerTopBlock {
+        width: 320px;
+        left: calc(50% - 160px);
+        min-height: 560px;
+        top: calc(50% - 145px);
+    }
+    .autoPickTopBlock .title {
+        font-size: 26px;
+        padding-bottom: 50px;
+    }
+    .autoPickTopBlock .desc {
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+
+    .autoPickTopBlock .goldButton a {
+        padding: 17px 55px;
+    }
+
+    .whatWeCheck .wrapper > .title {
+        font-size: 22px;
+        padding: 20px 0 20px;
+    }
+    .whatWeCheck .mainInfo {
+        width: 100%;
+        float: none;
+        padding-bottom: 175px;
+        background: url(../images/white_car_mobile.png) 50% 100% no-repeat;
+    }
+    .whatWeCheck .mainInfo .sides {
+        width: 100%;
+        height: auto;
+        padding: 15px 15px 25px 15px;
+    }
+    .whatWeCheck .mainInfo .sides .carImage{
+        display: none;
+    }
+    .whatWeCheck .mainInfo .sides .sideList ul li {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-bottom: 15px;
+    }
+    .whatWeCheck .mainInfo .sides .sideName {
+        font-size: 20px;
+    }
+    .mainInfo .sides .goldButton a {
+        padding: 17px 15px;
+    }
+    .mainInfo .sides .goldButton{
+        text-align: center;
+    }
+    .otherInfo .price .title {
+        padding: 20px 0 20px;
+    }
+    .otherInfo .haveQuestions {
+        padding-top: 0;
+    }
+    .buttonFreeConsultation{
+        text-align: center;
+    }
+
+    .valueAutoPick .title {
+        font-size: 22px;
+        padding: 25px 0 30px;
+        width: 100%;
+    }
+    .valueAutoPick {
+        background: url(../images/redcar-blured.jpg) 50% 0 no-repeat #101319;
+        background-size: 100% auto;
+        padding-bottom: 10px;
+    }
+    .valueAutoPick .servicesList .serviceRow {
+        padding: 0 15px 10px 15px;
+        height: auto;
+        background: #3030359e;
+    }
+    .valueAutoPick .servicesList .serviceRow .name {
+        float: none;
+        width: 100%;
+        font-size: 16px;
+    }
+    .valueAutoPick .servicesList .serviceRow .value {
+        float: none;
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+    }
+    #autoPickBuyToday .bottomInfo .title {
+        padding-top: 20px;
+    }
+    #autoPickBuyToday .listInfo ul li {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        float: none;
+        padding-left: 50px;
+    }
+    #autoPickBuyToday .listInfo ul li:before{
+        content: '';
+        position: absolute;
+        height: 9px;
+        width: 9px;
+        margin-left: -44px;
+        margin-top: 5px;
+        border: 8px solid #cfa55b;
+        box-shadow: 0 0 20px #cfa55b;
+    }
+
+    #autoPickBuyToday .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #autoPickBuyToday .formSide{ order: 3}
+    #autoPickBuyToday .carSide{ order: 2}
+    #autoPickBuyToday .bottomInfo{ order: 4}
+
+    #autoPickBuyToday .carSide .text{
+        display: none;
+    }
+    #autoPickBuyToday .formWrap{
+        padding: 15px 10px;
+    }
+
+    .pointInfo .textPoint {
+        float: none;
+        width: 100%;
+    }
+
+    .pointInfo .pnt {
+        width: 50px;
+    }
+    .pointInfo1.pointInfo{
+        padding-top: 20px;
+    }
+
+    /* детейлинг */
+    .autoPickTopBlock {
+        min-height: 450px;
+    }
+    .ourServicesDetailing .title {
+        font-size: 22px;
+        padding: 25px 0 25px;
+    }
+    .ourServicesDetailing .servicesWrap {
+        padding: 20px;
+        width: 100%;
+    }
+    .ourServicesDetailing .servicesWrap .carImage{display: none;}
+
+    .ourServicesDetailing .servicesList .service,
+    .ourServicesDetailing .servicesList .service:last-child {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .ourServicesDetailing .servicesWrap .goldButton{text-align: center}
+    .ourServicesDetailing .servicesWrap .goldButton a { padding: 17px 45px; }
+    .ourServicesDetailing {
+        padding-bottom: 250px;
+        background: url(../images/masters_mobile.png) 50% 98% no-repeat;
+
+    }
+    .detailingGive .title {
+        font-size: 22px;
+        padding: 35px 0;
+    }
+    .detailingGive .listSide {
+        width: 100%;
+        float: none;
+    }
+    .detailingGive .listSide .listItem {
+        width: 100%;
+        padding-left: 40px;
+        margin-bottom: 40px;
+        padding-right: 10px;
+    }
+    .detailingGive {
+        background:
+                url(../images/redcar-blured.jpg) 50% 0 /contain no-repeat,
+                url(../images/detailing_dark_bg.jpg) 50% 0 /cover no-repeat;
+        padding-bottom: 65px;
+    }
+    .detailingGive .listSide .carImage {
+        position: absolute;
+        bottom: -300px;
+        left: auto;
+        right: 0;
+    }
+    .detailingGive .formSide {
+        width: 100%;
+        float: none;
+        padding-top: 260px;
+    }
+    .detailingGive .formSide .formWrap {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+    }
+    .detailingGive .formSide .formWrap select{
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .detailingGive .formSide .formWrap input#detailingUserName {
+        margin-bottom: 20px;
+    }
+
+    .detailingGive .formSide .formWrap input[type="text"] {
+        height: 30px;
+        padding-top: 2px;
+        font-size: 18px;
+    }
+    .detailingGive .formSide .formWrap input[type="submit"]{
+        width: 95%;
+    }
+
+    .detailingGive .formSide .formWrap  .goldButton{
+        text-align: center;
+    }
+
+
+    /*  ЕЩЕ */
+    .documentsTopBlock { padding-top: 150px; }
+    .documentsTopBlock .title {
+        font-size: 26px;
+        padding-bottom: 30px;
+    }
+    .documentsTopBlock .text{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .servicesDocs .title {
+        font-size: 22px;
+        padding: 35px 0;
+    }
+    .servicesDocs .listBox {
+        padding: 20px 15px 20px 15px;
+
+    }
+    .servicesDocs{
+        padding-bottom: 150px;
+        background: url(../images/doc_keys.png) 50% 99% no-repeat;
+    }
+    .servicesDocs .listBox .listItem {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+    .servicesDocs .imageKeys{
+        display: none;
+    }
+    .servicesDocs .goldButton a {
+        padding: 17px 35px;
+    }
+    .servicesDocs .goldButton{
+        text-align: center;
+    }
+
+    /* greenchange */
+    .greenChangeTopBlock {
+        min-height: 450px;
+    }
+    .greenChangeTopBlock .title {
+        font-size: 22px;
+        font-weight: 800;
+    }
+    .greenChangeTopBlock .alignBlock {
+        width: 98%;
+        left: 0;
+        margin-left: 1%;
+        top: calc(50% - 145px);
+    }
+    .greenChangeTopBlock .text {
+        padding: 55px 0 80px;
+        font-size: 16px;
+    }
+    .greenChangeTopBlock .goldButton a {
+        padding: 17px 55px;
+    }
+    .howThisWork .title {
+        font-size: 22px;
+        padding: 25px 0;
+    }
+    .howThisWork .list .listItem {
+        height: auto;
+        width: 100%;
+        float: none;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .howThisWork .list .listItem .number {
+        width: 100%;
+        padding: 0 0 10px 15px;
+    }
+    .howThisWork .list .listItem:nth-child(3n-1) {
+        margin: 0 0 20px 0;
+    }
+    .howThisWork .list .listItem .details {
+        padding-top: 0;
+    }
+    .howThisWork .list .carImage {
+        left: 10px;
+        right: auto;
+        margin-bottom: -150px;
+    }
+    .howThisWork {
+        padding-bottom: 150px;
+    }
+
+    .advantageGC{
+        padding-top: 20px;
+    }
+    .advantageGC .title {
+        font-size: 22px;
+    }
+
+    .advantageGC .listSide, .advantageGC .rightSide {
+        float: none;
+        width: 100%;
+    }
+
+    .advantageGC .listSide .listItem {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+        height: auto;
+        padding-left: 5px;
+    }
+    .advantageGC .listSide .listItem .image img{
+        display: block;
+        width: auto;
+    }
+    .advantageGC .listSide .listItem .text {
+        float: none;
+        padding-left: 10px;
+    }
+    .advantageGC .listSide {
+        padding-top: 30px;
+    }
+
+    .advantageGC .listSide .info {
+        font-size: 14px;
+        font-weight: normal;
+        width: 100%;
+        text-transform: none;
+        padding: 20px 0 20px 50px;
+    }
+    .advantageGC .listSide .info:before{
+        content: '';
+        position: absolute;
+        height: 9px;
+        width: 9px;
+        margin-left: -44px;
+        margin-top: 5px;
+        border: 8px solid #cfa55b;
+        box-shadow: 0 0 20px #cfa55b;
+    }
+    .advantageGC .rightSide form {
+        height: auto;
+        width: 100%;
+        padding: 20px 15px;
+        margin-left: 0;
+    }
+
+    .advantageGC .rightSide form .goldButton{
+        text-align: center;
+    }
+    .advantageGC .rightSide form .goldButton input {
+        width: auto;
+        padding: 15px 50px;
+    }
+    .advantageGC .rightSide form input[type='text']{
+        margin-bottom: 30px;
+    }
+
+    /* autosale */
+    .selection .title {
+        padding: 120px 20px 30px;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .easyshop-selection{
+        background-color: #fff;
+        margin: 0 -5px;
+        padding-bottom: 10px;
+    }
+    .easyshop-selection .filters {
+        float: none;
+        width: 100%;
+    }
+
+    .easyshop-selection .filter-window {
+        height: auto;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .easyshop-selection .filters .filterBrand {
+        width: 100%;
+        padding: 20px 0 20px 45px;
+        background: url(../images/ico_car_name.png) 12px 50% no-repeat;
+    }
+    .easyshop-selection .filters .filterBrand select {
+        width: 90%;
+    }
+    .filters .filter select, .filters .filter input {
+        font-size: 14px;
+    }
+    .easyshop-selection .filters .filterYear {
+        padding: 20px 0 20px 45px;
+        width: 100%;
+    }
+    .filterYear .filter-title {
+        font-size: 14px;
+    }
+    .easyshop-selection .filters .filter{
+        border-right: 0;
+    }
+    .easyshop-selection .filters .filterFuel {
+        width: 100%;
+        padding: 20px 0 20px 45px;
+        background: url(../images/ico_car_motor.png) 11px 50% no-repeat;
+    }
+    .easyshop-selection .filters .filterFuel select {
+        width: 90%;
+    }
+    .easyshop-selection .filters .filterGearbox {
+        width: 100%;
+        padding: 20px 0 20px 45px;
+        background: url(../images/ico_car_transmission.png) 12px 50% no-repeat;
+    }
+    .easyshop-selection .filters .filterGearbox select {
+        width: 90%;
+    }
+    .easyshop-selection .button-wrapper {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .easyshop-selection .button-wrapper input {
+        height: auto;
+        width: auto;
+        padding: 15px 55px;
+        border-radius: 40px;
+    }
+    .easyshop-selection .heading{
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 15px 0;
+        margin: 0 -5px;
+    }
+
+    .selection .withcheck{
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        height: 220px;
+        background: url(../images/whiteCarCat.png) 10px 100% no-repeat;
+        margin: 0 -5px;
+    }
+    .selection {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .listCharItems .infoChar .charValue {
+        float: none;
+        width: auto;
+        text-align: left;
+    }
+
+    #categoryListCharItems .easyshop_item_thumb {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    /* catalog item */
+    .productMainInfo .head .productName {
+        font-size: 24px;
+        padding: 15px 0;
+        float: none;
+        width: 100%;
+    }
+
+
+
+    .productMainInfo .head .backToCatalog {
+        font-size: 16px;
+        color: #000000;
+        /* padding-top: 50px; */
+        float: none;
+        width: 100%;
+        text-align: right;
+        position: absolute;
+        top: 86px;
+        background-color: #fff;
+        padding: 10px;
+        left: 0;
+    }
+
+    .mobile-pictures img{
+        max-width: 100%;
+    }
+
+    .mobile-pictures .more-images-handler{
+        width: 100%;
+        text-align: center;
+        background-color: #f3f3f3;
+        color: #959595;
+        font-size: 16px;
+        padding: 10px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .mobile-pictures .mobile-images-spoiler{
+        display: none;
+    }
+
+    .freeCheck .text .title {
+        font-size: 18px;
+        padding: 20px 0 20px;
+    }
+
+    .freeCheck .text {
+        width: 100%;
+        float: none;
+        color: #fff;
+    }
+    .freeCheck .desc {
+        padding-left: 45px;
+        padding-right: 10px;
+    }
+    .freeCheck .icos{
+        display: none;
+    }
+    .freeCheck {
+        height: auto;
+        padding-bottom: 40px;
+        background: url( ../images/freeCheck.jpg) 0 0 no-repeat ;
+        background-size: auto 100%;
+    }
+
+    .recommendedItems .recommendedTitle {
+        font-size: 18px;
+        padding: 20px 10px;
+    }
+
+    .listCharItems .easyshop_item_thumb{
+        height: auto;
+    }
+    .listCharItems .text .nameItem, .listCharItems .text .priceBlock {
+        height: 65px;
+        overflow: hidden;
+    }
+}
+
+
